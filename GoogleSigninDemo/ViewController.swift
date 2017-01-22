@@ -25,6 +25,9 @@ class ViewController: UIViewController, GIDSignInUIDelegate,GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
+        signInButton.colorScheme = GIDSignInButtonColorScheme.dark;
+        signInButton.style = GIDSignInButtonStyle.wide;
+
 
     }
 
